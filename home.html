@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LearnHub offers a variety of online courses to help you grow your skills.">
+    <title>Course Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/react.jpg">
+</head>
+<body>
+    <header class="header-box">
+        <div class="search-bar">
+            <a href="#" class="title" id="home-link">LearnHub</a>
+            <a href="#" class="admin" id="admin-link">Admin</a>
+        </div>
+    </header>
+
+    <section class="title-page">
+        <div class="content">
+            <h1>Learn from the best be<br> your best..</h1>
+            <p>Give yourself an upgrade with our inspiring online courses<br>and join a global community of learners.</p>
+            <a href="#" class="get-started">Get Started</a>
+        </div>
+    </section>
+
+    <section class="placement-partners">
+        <h1>Our Placement Partners</h1>
+        <div class="logos-grid">
+            <img src="img/1.png" alt="Partner 1">
+            <img src="logo/2.png" alt="Partner 2">
+            <img src="logo/3.png" alt="Partner 3">
+            <img src="logo/4.png" alt="Partner 4">
+            <img src="img/5.png" alt="Partner 5">
+            <img src="img/6.png" alt="Partner 6">
+            <img src="img/7.png" alt="Partner 7">
+            <img src="img/8.png" alt="Partner 8">
+        </div>
+        <div class="more-companies">
+            <span>and, more<br>companies</span>
+        </div>
+    </section>
+
+    <div class="intro-text">
+        <p class="first-line">Open Source Theme and UI Components</p>
+        <p class="second-line">Geaux Astro helps you<br> craft beautiful websites<br> efficiently</p>
+    </div>
+
+    <section class="container">
+        <div class="left-section">
+            <div class="feature">
+                <img src="logo/badge.jpg" alt="Certificate Icon" class="logo">
+                <div>
+                    <h3>Certificate Distribution</h3>
+                    <p>We offer certificates to validate and recognize<br> your achievement.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <img src="logo/brain.png" alt="Knowledge Icon" class="logo">
+                <div>
+                    <h3>Knowledge</h3>
+                    <p>We deliver transformative knowledge that<br>empowers and inspires.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <img src="logo/hand.png" alt="Experience Icon" class="logo">
+                <div>
+                    <h3>Hands-on Experience</h3>
+                    <p>We provide hands-on experience for real-world<br> learning. You learn best by doing.</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+            <img src="img/AboutDashboard.png" alt="Data Visualization" class="data-visualization">
+        </div>
+    </section>
+
+    <section class="outer-container">
+        <div class="container1">
+            <div class="left-section1">
+                <p class="line green">Empower your future<br> with cutting-edge skills</p>
+                <p class="line blue">New, Embrace innovation,<br> master technology, &<br> shape the digital world</p>
+                <p class="line red">Your journey to success<br>starts here.</p>
+            </div>
+            <div class="right-section1">
+                <p class="description">
+                    Join our course with a proven track record of success,<br> where learning isn't just about gaining skills; it's about<br> growing them. Join us, learn with confidence, and<br> watch your skills soar.
+                </p>
+                <div class="counters">
+                    <div class="counter">
+                        <div class="label">Total Students</div>
+                        <div id="total-students" class="number">0</div>
+                    </div>
+                    <div class="counter">
+                        <div class="label">Placed Students</div>
+                        <div id="placed-students" class="number">0</div>
+                    </div>
+                    <div class="counter">
+                        <div class="label">Unplaced Students</div>
+                        <div id="unplaced-students" class="number">0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="admin-page" class="form-container" style="display: none;">
+        <h2>Fill this Form</h2>
+        <form id="admin-form">
+            <div class="form-row">
+                <div class="form-column">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-column">
+                    <label for="rollno">Roll No:</label>
+                    <input type="text" id="rollno" placeholder="Enter your roll number" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-column">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-column">
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" id="phone" placeholder="Enter your phone number" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-column">
+                    <label for="course">Course:</label>
+                    <select id="course" required>
+                        <option value="Select Course">Select Course</option>
+                        <option value="React Basics">React Basics</option>
+                        <option value="UI/UX Designer">UI/UX Designer</option>
+                        <option value="JavaScript Fundamental">JavaScript Fundamental</option>
+                        <option value="Advanced CSS">Advanced CSS</option>
+                        <option value="Backend Development">Backend Development</option>
+                    </select>
+                </div>
+                <div class="form-column">
+                    <label for="status">Status:</label>
+                    <select id="status" required>
+                        <option value="Unplaced">Unplaced</option>
+                        <option value="Placed">Placed</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <h2>LearnHub</h2>
+        <p>© 2022 Tailwind Labs Inc. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
